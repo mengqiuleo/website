@@ -1,7 +1,7 @@
 <!--
  * @Author: Pan Jingyi
  * @Date: 2022-08-19 16:57:11
- * @LastEditTime: 2022-08-20 17:35:56
+ * @LastEditTime: 2022-08-21 03:07:06
 -->
 <template>
   <div id="home">
@@ -22,7 +22,9 @@
       </div>
 
       <!-- button  -->
-      <Button class="btn" @click="getThere($event)" />
+      <Button class="btn" @click="getThere($event)" >
+        <a href="#aboutMe"></a>
+      </Button>
     </div>
   </div>
 </template>

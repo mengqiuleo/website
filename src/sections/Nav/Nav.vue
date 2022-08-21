@@ -2,28 +2,29 @@
   <nav>
       <div class="logo" @click="getThere($event)">
         <a href="#header">
-            <v-btn depressed plain text color="white"> 小y </v-btn>
+            小y
         </a>
       </div>
       <ul class="nav-menu">
         <li @click="getThere($event)">
           <a href="#home">
-            <v-btn depressed plain text color="white"> home </v-btn>
-          </a>
-        </li>
-        <li @click="getThere($event)">
-          <a href="#header">
-            <v-btn depressed plain text color="white"> header </v-btn>
+             home
           </a>
         </li>
         <li @click="getThere($event)">
           <a href="#aboutMe">
-            <v-btn depressed plain text color="white"> aboutMe </v-btn>
+             aboutMe
           </a>
         </li>
         <li @click="getThere($event)">
           <a href="#project">
-            <v-btn depressed plain text color="white"> 项目 </v-btn>
+             project
+          </a>
+        </li>
+
+        <li @click="getThere($event)">
+          <a href="#project">
+             项目
           </a>
         </li>
         <li>我的博客</li>

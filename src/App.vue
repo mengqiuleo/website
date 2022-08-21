@@ -1,15 +1,15 @@
 <!--
  * @Author: Pan Jingyi
  * @Date: 2022-08-19 16:25:08
- * @LastEditTime: 2022-08-20 17:36:40
+ * @LastEditTime: 2022-08-21 16:26:21
 -->
 <template>
   <div>
     <Nav />
     <Home />
     <aboutMe />
-    <Header />
     <Project />
+
   </div>
 </template>
 
@@ -17,7 +17,7 @@
 import { defineComponent } from 'vue';
 import aboutMe from './sections/AboutMe/AboutMe.vue';
 import Home from './sections/Home/Home.vue';
-import Header from './sections/Header/Header.vue';
+//import Header from './sections/Header/Header.vue';
 import Project from './sections/project/Project.vue';
 import Nav from './sections/Nav/Nav.vue'
 
@@ -27,7 +27,7 @@ export default defineComponent({
     Nav,
     aboutMe,
     Home,
-    Header,
+    //Header,
     Project,
   },
   setup() {},

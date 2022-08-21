@@ -1,7 +1,7 @@
 <!--
  * @Author: Pan Jingyi
  * @Date: 2022-08-20 09:49:06
- * @LastEditTime: 2022-08-20 10:36:09
+ * @LastEditTime: 2022-08-21 16:31:12
 -->
 <template>
   <div id="project">
@@ -19,7 +19,8 @@ export default defineComponent({
 </script>
 <style lang='scss' scoped>
 .project {
-  background-color: aquamarine;
+  background: url(../../assets/bg2.png) no-repeat center center;
+  background-size:cover;
   height: 800px;
 }
 </style>
