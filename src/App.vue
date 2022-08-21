@@ -1,7 +1,7 @@
 <!--
  * @Author: Pan Jingyi
  * @Date: 2022-08-19 16:25:08
- * @LastEditTime: 2022-08-21 16:26:21
+ * @LastEditTime: 2022-08-22 01:52:03
 -->
 <template>
   <div>
@@ -47,5 +47,16 @@ html{
     font-size: 10px;
     font-family: 'Roboto Mono', monospace;
     background-color: #efebfa;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 100%;
+  background: hsl(230deg, 7%, 61%);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #FFC090;
+  border-radius: 15px;
 }
 </style>

@@ -1,26 +1,63 @@
 <!--
  * @Author: Pan Jingyi
  * @Date: 2022-08-20 09:49:06
- * @LastEditTime: 2022-08-21 16:31:12
+ * @LastEditTime: 2022-08-22 01:46:08
 -->
 <template>
   <div id="project">
-    <h1 class="project">project</h1>
+    <!-- title -->
+    <div class="container">
+        <div class="content">
+          <!-- title -->
+          <div class="testimonial__title">
+              <div class="sectionTitle">
+                个人项目
+                <h6> 享受coding的乐趣 🤪 </h6>
+              </div>
+          </div>
+
+          <!-- project -->
+          <projectCard />
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import { defineComponent } from 'vue'
+import projectCard from '@/components/projectCard.vue';
 export default defineComponent({
+  components: {
+    projectCard
+  },
   setup() {
     return {}
   }
 })
 </script>
 <style lang='scss' scoped>
-.project {
+.container {
+  position: relative;
   background: url(../../assets/bg2.png) no-repeat center center;
   background-size:cover;
-  height: 800px;
+  height: 1400px;
+}
+
+.testimonial__title {
+  position: absolute;
+  top:  60px;
+  left: 510px;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-family: 'Poppins';
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+  font-size: 5rem;
+  color: #C6D2E0;;
+  @media only screen and (max-width: 768px) {
+    font-size: 2.5rem;
+  }
 }
 </style>

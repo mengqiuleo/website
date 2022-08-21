@@ -1,11 +1,16 @@
 <!--
  * @Author: Pan Jingyi
  * @Date: 2022-08-19 16:57:11
- * @LastEditTime: 2022-08-21 03:07:06
+ * @LastEditTime: 2022-08-22 02:18:55
 -->
 <template>
   <div id="home">
     <div class="container">
+      <!-- 黑白切换 -->
+      <div class="switch">
+        <Switch />
+      </div>
+
       <!-- 浮动 -->
       <div class="shell">
         <div class="content" @mousemove="moveEvent($event)">
@@ -31,11 +36,13 @@
 
 <script>
 import { defineComponent } from 'vue';
-import Button from '../../components/Button.vue'
+import Button from '../../components/Button.vue';
+import Switch from '../../components/switch.vue';
 
 export default defineComponent({
   components:{
     Button,
+    Switch
   },
   setup() {
 
@@ -81,6 +88,14 @@ export default defineComponent({
   position: relative;
   justify-content: center;
   align-items: center;
+}
+
+.switch {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  top: 10px;
+  left: 10px;
 }
 
 .container .shell {
