@@ -1,7 +1,7 @@
 <!--
  * @Author: Pan Jingyi
  * @Date: 2022-08-20 09:49:06
- * @LastEditTime: 2022-08-22 01:46:08
+ * @LastEditTime: 2022-08-22 17:57:52
 -->
 <template>
   <div id="project">
@@ -17,7 +17,14 @@
           </div>
 
           <!-- project -->
-          <projectCard />
+          <!-- <projectCard /> -->
+
+          <!-- 瀑布流 -->
+          <div class="prcDetail-container">
+            <!-- <div v-for="item "></div> -->
+            <projectCard :img="img" :title="title" :subTitle="subTitle" />
+          </div>
+
       </div>
     </div>
   </div>
@@ -26,12 +33,21 @@
 <script>
 import { defineComponent } from 'vue'
 import projectCard from '@/components/projectCard.vue';
+// import prcDetail from '../../components/picDetail.vue'
 export default defineComponent({
   components: {
     projectCard
+    // prcDetail
   },
   setup() {
-    return {}
+    const img = '../assets/头像.jpg';
+    const title = 'LeetCode题解';
+    const subTitle = 'LeetCode题解，使用JavaScript实现'
+    return {
+      img,
+      title,
+      subTitle
+    }
   }
 })
 </script>
@@ -59,5 +75,9 @@ export default defineComponent({
   @media only screen and (max-width: 768px) {
     font-size: 2.5rem;
   }
+}
+
+.prcDetail-container {
+  position: absolute;
 }
 </style>

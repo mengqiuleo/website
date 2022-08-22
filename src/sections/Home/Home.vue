@@ -1,15 +1,15 @@
 <!--
  * @Author: Pan Jingyi
  * @Date: 2022-08-19 16:57:11
- * @LastEditTime: 2022-08-22 02:18:55
+ * @LastEditTime: 2022-08-22 15:24:19
 -->
 <template>
   <div id="home">
     <div class="container">
       <!-- 黑白切换 -->
-      <div class="switch">
+      <!-- <div class="switch">
         <Switch />
-      </div>
+      </div> -->
 
       <!-- 浮动 -->
       <div class="shell">
@@ -37,12 +37,12 @@
 <script>
 import { defineComponent } from 'vue';
 import Button from '../../components/Button.vue';
-import Switch from '../../components/switch.vue';
+// import Switch from '../../components/switch.vue';
 
 export default defineComponent({
   components:{
     Button,
-    Switch
+    // Switch
   },
   setup() {
 

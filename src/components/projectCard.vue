@@ -1,15 +1,15 @@
 <!--
  * @Author: Pan Jingyi
  * @Date: 2022-08-21 22:05:24
- * @LastEditTime: 2022-08-22 01:45:07
+ * @LastEditTime: 2022-08-22 17:59:29
 -->
 <template>
   <div class="project-card">
     <div class="container">
       <div class="card" data-tilt>
-        <img src="../assets/logo.jpg" alt="">
-        <h2>LeetCode题解</h2>
-        <p>一些题解思路，使用JavaScript实现</p>
+        <img src= "../assets/头像.jpg" alt="">
+        <h2>{{ title }}</h2>
+        <p>{{ subTitle }}</p>
         <div class="links">
           <a href=""><img src="../assets/icons/vue.png" alt=""></a>
           <a href=""><img src="../assets/icons/eslint.png" alt=""></a>
@@ -26,6 +26,12 @@
 import tils from '../utils/tilt'
 import { defineComponent } from 'vue'
 export default defineComponent({
+  props: {
+    img: String,
+    title: String,
+    subTitle: String,
+    links: Object
+  },
   mounted() {
     tils()
   },
